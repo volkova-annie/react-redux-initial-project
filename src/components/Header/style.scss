@@ -1,0 +1,32 @@
+@import '../../styles/colors.scss';
+
+.wrapper {
+  background-color: $black;
+}
+
+.header {
+  max-width: 1140px;
+  padding: 0 12px;
+  margin: auto;
+  height: 77px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: $white;
+  border-bottom: 1px solid $gray;
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    font-size: calc(14rem / 16);
+  }
+
+  &__listItem {
+    white-space: nowrap;
+    margin: 0 12.5px;
+  }
+}
+
+.phone {
+  color: $white;
+}

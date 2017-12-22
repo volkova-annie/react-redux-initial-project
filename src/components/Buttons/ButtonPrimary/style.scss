@@ -1,0 +1,11 @@
+@import '../../../styles/colors.scss';
+
+.btn__primary {
+  height: 50px;
+  background-color: $blue;
+  box-shadow: 1px 2px 4px 0 $black-opacity;
+  border-radius: 2px;
+  padding: 0 5rem;
+  font-weight: 500;
+  font-family: 'Roboto Medium';
+}

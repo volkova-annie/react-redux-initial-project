@@ -1,0 +1,18 @@
+@import '../../styles/colors.scss';
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+.navbar__item {
+  border: 1px solid $black;
+  margin: 0 15px;
+  padding: 5px 10px;
+
+  & a {
+    color: $purple;
+    text-decoration: none;
+  }
+}
