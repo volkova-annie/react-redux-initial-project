@@ -1,0 +1,156 @@
+.App {
+  text-align: center;
+  margin: auto;
+}
+
+.PostsScreen {
+  padding: 20px;
+  display: flex;
+}
+
+.PostsScreen .LeftPane {
+  flex: 3;
+}
+
+.PostsScreen .ContentPane {
+  flex: 7;
+  padding: 10px;
+  margin-left: 20px;
+  overflow-y: auto;
+  max-height: calc(100vh - 65px);
+  align-self: center;
+}
+
+.PostsScreen .ContentPane img {
+  max-width: 100%;
+  max-height: calc(100vh - 80px);
+}
+
+.PostsScreen ul {
+  list-style: none;
+  padding-left: 0;
+  margin: auto;
+  border: 1px solid #aaa;
+  max-height: calc(100vh - 90px);
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+.PostsScreen li {
+  text-align: left;
+  border-bottom: 1px solid #aaa;
+  cursor: pointer;
+}
+
+.PostsScreen li > div {
+  padding-left: 20px;
+  display: flex;
+  align-items: center;
+  min-height: 60px;
+}
+
+.PostsScreen li h3 {
+  padding: 10px;
+  margin: 0;
+  font-size: 16px;
+}
+
+.PostsScreen .thumbnail {
+  max-width: 60px;
+}
+
+.PostsScreen .TopicFilter {
+  height: 40px;
+}
+
+.PostsScreen .TopicFilter a {
+  margin: 0 15px;
+  line-height: 40px;
+  color: blue;
+  text-decoration: none;
+}
+
+.PostsScreen .TopicFilter a.selected {
+  color: grey;
+}
+
+.TopicsScreen {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.TopicsScreen ul {
+  list-style: none;
+  padding-left: 0;
+  width: 640px;
+  margin: auto;
+  border: 1px solid #aaa;
+  max-height: calc(100vh - 110px);
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+.TopicsScreen li {
+  text-align: left;
+  border-bottom: 1px solid #aaa;
+  cursor: pointer;
+}
+
+.TopicsScreen li > div {
+  padding-left: 20px;
+}
+
+.TopicsScreen li h3 {
+  padding: 10px 0 0 0;
+  margin: 0;
+}
+
+.TopicsScreen li p {
+  padding: 10px 0;
+  margin: 0;
+}
+
+.NextScreen {
+  position: fixed;
+  top: 50%;
+  right: calc((100vw - 640px)/2 - 90px);
+  background: url('../img/right_arrow.png');
+  background-size: 80px 80px;
+  width: 80px;
+  height: 80px;
+  border: 0;
+  cursor: pointer;
+  outline: none;
+}
+
+/*.TabList {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  & .Tab {
+    padding: 5px 20px;
+    border: 1px solid slategray;
+    margin: 0 10px;
+    cursor: pointer;
+    &.active {
+      font-weight: bold;
+    }
+    & .disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+    }
+  }
+}*/
+
+.FilterWrapper {
+  display: flex;
+  justify-content: center;
+  & .Filter {
+    margin-left: 10px;
+    cursor: pointer;
+    &.active {
+      font-weight: bold;
+    }
+  }
+}
